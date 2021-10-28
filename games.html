@@ -9,10 +9,17 @@
 	</center></div>
 	
 	<div class="Content"><center>
-		<button onclick="window.location.href='https://reedingame-studios.itch.io'"><h1>Itch.io Page</h1></button>
-		<button onclick="window.location.href='CoolProjects/northPole.html'"><h1>North Pole Clock</h1></button>
-		<button onclick="window.location.href='https://drive.google.com/drive/folders/1voSG3lO5-GvV-jtcuwbJmlvszA4W59Sy?usp=sharing'"><h1>Open Source Projects</h1></button>
-	</center></div>
+	<table id="Projects">
+		<tr>
+		<td><a href="CoolProjects/northPole.html">The North Pole Clock</a></td>
+		</tr>
+		<tr>
+		<td><a href="https://reedingame-studios.itch.io">Itch.io Page</a></td>
+		</tr>
+	
+
+	</table>
+	</div></center>
 
 
 </font>
@@ -27,6 +34,14 @@ html{
 height: 100%;
 background-image: linear-gradient(to bottom, white,grey);
 animation: fade 2s ease forwards;
+}
+
+#Projects{
+font-style: bold;
+font-family: Monospace;
+font-size: 25;
+text-align: center;
+
 }
 
 @keyframes fade{
@@ -46,6 +61,10 @@ font-family: Monospace;
 a{
 color: black;
 text-decoration: none;
+}
+a:hover{
+background-color:black;
+color:white;
 }
 button{
 height: 25%;
